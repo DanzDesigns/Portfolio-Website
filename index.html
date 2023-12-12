@@ -2,10 +2,148 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danish Designs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="app.css">
+    <title>UI/UX Designer Portfolio</title>
 </head>
-<body>
-    <h1>Hello World - This is my portfolio</h1>
+<body class="bg-dark text-light">
+
+    <nav class="container navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Danish</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#projects">Work</a>
+            <a class="nav-item nav-link" href="#contact-me">Contact Me</a>
+            <a class="nav-item nav-link" href="#about-me">About Me</a>
+          </div>
+        </div>
+      </nav>
+
+
+      <header class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Add your photo here -->
+                <img src="images/profile-pfp.jpeg" class="img-fluid rounded-circle" alt="Your Photo">
+            </div>
+            <div class="col-md-8">
+                <p class="pretext">Hey, I'm</p>
+                <h1 class="name">Danish</h1>
+                <p class="pretext">Game UI/UX Designer</p>
+            </div>
+        </div>
+    </header>
+
+        <!-- About Me Section -->
+        <section class="container mt-5" id="about-me">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate UI/UX designer with 2 years of experience in creating visually appealing and user-friendly designs. My proficiency in the Adobe Suite, coupled with a keen eye for detail, allows me to bring ideas to life and deliver engaging user experiences.
+            </p>
+            <p>
+                Throughout my career, I have worked on a variety of projects, each presenting unique challenges and opportunities for creativity. I believe in the power of design to solve problems and enhance the way people interact with digital products.
+            </p>
+            <p>
+                When I'm not designing, you can find me exploring the latest design trends, attending industry events, and seeking inspiration from diverse sources to continually improve my skills and stay ahead in the ever-evolving world of design.
+            </p>
+        </section>
+
+    <section class="container mt-5" id="projects">
+        <h2>Projects</h2>
+
+        <div class="row">
+            <!-- Project 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/project1.png" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Bridge of Spirits themed Game UI</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/project2.png" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">3D Textured Old Themed UI</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/project3.png" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Modern Cartoonish Bold Game UI</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/project4.png" class="card-img-top" alt="Project 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Rewards Log UI</h5>
+                    </div>
+                </div>
+            </div><!-- Project 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/project5.png" class="card-img-top" alt="Project 5">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Cartoony Cheerful UI</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/project6.png" class="card-img-top" alt="Project 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Modern Wooden Themed UI</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5 card" id="contact-me">
+        <h2>Contact Me</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-info" id="submit-btn">Submit</button>
+        </form>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
